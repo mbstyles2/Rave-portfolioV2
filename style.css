@@ -379,7 +379,8 @@ footer {
 /* extras */
 .project-grid, .service-grid {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
@@ -496,6 +497,7 @@ footer {
   } */
 
 }
+
 
 
 
