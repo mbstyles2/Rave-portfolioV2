@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="all.css">
-  <link rel="stylesheet" href="webfonts/all.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Raveagles | About</title>
-    <style>
-        body{
-            justify-content: center;
-            text-align: center;
-        }
-        div,h1, h2, h3, p{
-            opacity: 1;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raveagles | About Us</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <nav class="navbar">
+      <img src="/images/logo.png" class="rave" width="60px" alt="">
+      <h3>RAVEAGLES</h3>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Services</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav class="navbar" id="navbar">
-          <img src="/images/logo.png" class="rave" width="60px" alt="">
-          <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!-- <li><a href="signup.html">Sign Up</a></li> -->
-          </ul>
-      
-          <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
-        </nav>
-      </header>
+  <section class="container">
+    <h1>About Raveagles</h1>
+    <p>Raveagles is a creative tech group focused on innovation, design, and coding education.</p>
+    <p>We aim to empower young developers, designers, and creators through practical learning, projects, and collaboration.</p>
 
+    <div class="about-team">
+      <div class="team-member">
+        <img src="/images/eag23.png" alt="Team member">
+        <h3>Mitchel A.</h3>
+        <p>Founder & Developer</p>
+      </div>
 
-    <h1>About Raveagles</h1> <br>
-
-    <p>Raveagles is a forward-thinking tech start-up focused on Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque voluptates modi in veniam. Aspernatur facilis dolore doloremque veritatis itaque.</p>
-
-    <div class="blog">
-        <h1>MB Styles</h1>
-        <p>Web developer</p>
-        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
-        <br>
+      <div class="team-member">
+        <img src="/images/tag.png" alt="Team member">
+        <h3>Joy C.</h3>
+        <p>Designer & Strategist</p>
+      </div>
     </div>
-    
+  </section>
 
-    <div class="blog">
-        <h1>Alamin</h1>
-        <p>Game designer</p>
-        <p>Lorem PSipsum Nindolor Xboxsit Segamet.</p>
-        <br>
-    </div>
-    
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; Raveagles. All Rights Reserved.</p>
+  </footer>
 </body>
-
 </html>
