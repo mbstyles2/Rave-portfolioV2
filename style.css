@@ -400,12 +400,13 @@ footer {
 
 .about-team {
   display: flex;
+ flex-direction: column;
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
 }
 .team-member img {
-  width: 150px;
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -495,6 +496,7 @@ footer {
   } */
 
 }
+
 
 
 
