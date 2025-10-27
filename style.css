@@ -41,7 +41,7 @@ header{
   border-radius: 50%;
 }
 nav h3{
-  font-family:cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 35px;
 }
 
@@ -460,4 +460,5 @@ footer {
   } */
 
 }
+
 
