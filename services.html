@@ -1,57 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raveagles | Services</title>
-  <link rel="stylesheet" href="style.css">
-   <style>
-    div, h1, h2, h3,p{
-  opacity: 1;
-}
-  </style>
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="webfonts/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">   
+    <title>Raveagles | Homepage</title>
 </head>
+<style>
+div, h1, h2, h3,p{
+  opacity: 1;
+  transform: translateY(0);
+}
+.dev{
+  height: 480px;
+}
+.dev:hover{
+  background:black;
+  color: goldenrod;
+  transition: 0.5s ease-in;
+}
+nav h3{
+	margin-top:-10px;
+}
+footer{
+position: relative;
+top: 10rem;
+}
+</style>
 <body>
-  <header>
-    <nav class="navbar">
-      <img src="/images/logo.png" class="rave" width="60px" alt="">
-      <h3>RAVEAGLES</h3>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar" id="navbar">
+          <img src="/images/logo.png" alt="logo" class="rave" width="60px" alt=""><h3>RAVEAGLES</h3>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <!-- <li><a href="signup.html">Sign Up</a></li> -->
+          </ul>
+      
+          <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+      </header> 
 
-  <section class="container">
-    <h1>Our Services</h1>
-    <p>We offer top-notch digital and creative services to help your ideas come alive.</p>
+<h1 style="text-align: center;">Our Services</h1>
 
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>We build fast, secure, and responsive websites tailored for your brand or business.</p>
-      </div>
-      <div class="service-card">
-        <h3>Game Development</h3>
-        <p>Creating fun, immersive, and creative gaming experiences for players of all ages.</p>
-      </div>
-      <div class="service-card">
-        <h3>AI Consultancy</h3>
-        <p>Providing expert advice on AI integration and intelligent system design.</p>
-      </div>
-      <div class="service-card">
-        <h3>Graphic Design</h3>
-        <p>Stunning visuals and branding that bring your ideas to life.</p>
-      </div>
-    </div>
-  </section>
+      <div class="divide slide-in-top delay-2">
+        
+        <div class="dev">
+          <img src="/images/tag.png" alt="html">
+          <h3>Web Development</h3><br>
+          <p>Web development involves creating websites or web applications that users can access via the internet.It encompasses a range of tasks, including web design,front-end development,back-end development and database management.</p>
+       
+        </div>
 
-  <footer>
-    <p>&copy; Raveagles. All Rights Reserved.</p>
-  </footer>
+        <div class="dev">
+          <img src="/images/b.png" alt="html">
+          <h3>Graphic Design</h3><br><br>
+                <p>Graphic designers utilize various tools and techniques to craft designs for print, digital media, branding, and advertising.</p>
+        </div>
+
+        <div class="dev">
+          <img src="/images/rave.png" alt="Game">
+          <h3>Game Development</h3><br>
+          <p>We make and create games for interactive experiences for players to enjoy across various platforms like consoles, computers, and mobile devices</p>
+        </div>
+
+        <div class="dev">
+          <img src="/images/ui.webp" alt="html">
+          <h3>AI Consultancy</h3><br>
+                <p>We provide expert solutions and advices to businesses on how to leverage artificial intelligence technology.
+        </div>
+
+        <div class="dev">
+          <img src="/images/blankw (5).png" alt="html">
+          <h3>Academic Writing</h3><br>
+                <p>Academic writing serves as a means of advancing knowledge within a particular field of study, contributing to ongoing scholarly discourse, and building upon the work of previous researchers.
+                </p>
+        </div>
+
+        <div class="dev">
+          <img src="/images/eag23.png" alt="html">
+          <h3>CMS</h3><br>
+                <p>CMS systems streamline the process of managing digital content, empowering users to create and maintain dynamic websites, blogs, online stores, and other digital platforms without the need for extensive technical expertise.</p>
+        </div>
+
+      </div>
+        <footer>
+        <div class="foot">
+          <img src="/images/logo.png" alt="logo" class="rave" width="60px" alt=""><h3>RAVEAGLES</h3><br>
+          <!-- <ul class="nav-links foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="blog.html">Sign Up</a></li>
+          </ul>    -->
+        </div> 
+        <div class="contact">
+          <p>Contact us</p>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <p>Email:Raveagles@gmail.com</p>
+          <p>Number: 234 8071181816</p>
+        </div>
+        &copy;  Raveagles. All Rights Reserved.
+      </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-

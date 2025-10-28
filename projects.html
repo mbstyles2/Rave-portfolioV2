@@ -1,60 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raveagles | Projects</title>
-  <link rel="stylesheet" href="style.css">
-   <style>
-    div, h1, h2, h3,p{
-  opacity: 1;
-}
-  </style>
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="webfonts/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">  
+    <title>Raveagles | Projects</title>
+  
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <img src="/images/logo.png" class="rave" width="60px" alt="">
-      <h3>RAVEAGLES</h3>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+  <style>
+    div, h1, h2, h3,p{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .dev{
+      height: 480px;
+    }
+    .dev:hover{
+      background:black;
+      color: goldenrod;
+      transition: 0.5s ease-in;
+    }
+    nav h3{
+      margin-top:-10px;
+    }
+    footer{
+    position: relative;
+    top: 10rem;
+    }
+    </style>
+    <body>
+        <header>
+            <nav class="navbar" id="navbar">
+              <img src="/images/logo.png" alt="logo" class="rave" width="60px" alt=""><h3>RAVEAGLES</h3>
+              <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <!-- <li><a href="signup.html">Sign Up</a></li> -->
+              </ul>
+          
+              <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+            </nav>
+          </header> 
 
-  <section class="container">
-    <h1>Our Projects</h1>
-    <p>Here are some of the amazing works and collaborations we’ve built at Raveagles.</p>
+      <div class="shift">
+        <img src="/images/giphy (3).gif" alt="">
 
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="/images/projects.png" alt="Project 1">
-        <h3>Digital Library System</h3>
-        <p>A modern platform for students to access, share, and manage academic resources online.</p>
+        <div class="shift-r">
+          <h1>Code like Mad!</h1>
+          <p> You race against time to fix bugs, type furious lines of code, and outsmart system glitches before your screen crashes. With every keystroke, your score climbs — but one typo could send your progress spiraling! Fast fingers, sharp focus, and pure chaos — can you keep up and code like mad?</p>
+        </div>
       </div>
 
-      <div class="project-card">
-        <img src="/images/spol.png" alt="Project 2">
-        <h3>Sports Portal</h3>
-        <p>A web app connecting fans to live scores, analysis, and sports community interactions.</p>
+    <div class="container-4 slide-in-left">
+       <h1>Our Projects</h1>
+      <div class="slideshow-container slide-in-left" >
+        <div class="slide">
+          <img src="/images/Capture.PNG" alt="diglib"> 
+        </div>
+        <div class="slide">
+          <img src="/images/spol.png" alt="">       
+        </div>
+        <div class="slide">
+          <img src="/images/bla.jpg" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/blankw (2).png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/bllur.png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/catalog.png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/ctb.png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/44348.png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/gf.PNG" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/yu.png" alt=""> 
+        </div>
+        <div class="slide">
+          <img src="/images/Street.jpg" alt="">
+          <!-- <div class="caption">Here’s the 4 slide</div> -->
+        </div>
+  
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
       </div>
 
-      <div class="project-card">
-        <img src="/images/ctb.png" alt="Project 3">
-        <h3>Code the Battle</h3>
-        <p>An interactive coding game for learners to compete, learn, and sharpen their logic.</p>
-      </div>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; Raveagles. All Rights Reserved.</p>
-  </footer>
+<hr>
+
+
+<script src="script.js"></script>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[index].style.display = 'block';
+  }
+
+  function changeSlide(n) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlide(slideIndex);
+  }
+
+  // Auto show first slide
+  showSlide(slideIndex);
+
+  setInterval(() =>{
+    changeSlide(1);
+  }, 5000);
+
+  // 
+
+  const elements = document.querySelectorAll("div, h1, h2, h3, p, article, section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
-
-
-
