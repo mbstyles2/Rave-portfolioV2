@@ -191,9 +191,10 @@ footer {
   text-align: center;
   font-size: 0.875rem;
   gap: 19.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   height:auto;
- 
+  position: relative;
+  top: 5rem;
 }
 .contact a{
   font-size: 1.7rem;
@@ -531,6 +532,7 @@ footer{
     display: block;
   }
 }
+
 
 
 
