@@ -184,17 +184,32 @@
 
       <!-- Projects com -->
 
-      <div class="container-5 fly">
-        <div class="round"> <h4> <i class="fas fa-project-diagram"></i>
-            <br>Projects Completed</h4> <h1>25</h1></div>
-        <div class="round">
-          <h4><i class="fas fa-tools"></i> <br>Software Used</h4> <h1>20</h1>
-        </div>
-        <div class="round">
-          <h4><i class="fas fa-gamepad"> </i> <br>Games Completed</h4>
-        <h1>3</h1>
-        </div>
-    </div>
+<div class="container-5 fly">
+  <div class="round">
+    <h4>
+      <i class="fas fa-project-diagram"></i><br>
+      Projects Completed
+    </h4>
+    <h1 class="counter" data-target="25">0</h1>
+  </div>
+
+  <div class="round">
+    <h4>
+      <i class="fas fa-tools"></i><br>
+      Software Used
+    </h4>
+    <h1 class="counter" data-target="20">0</h1>
+  </div>
+
+  <div class="round">
+    <h4>
+      <i class="fas fa-gamepad"></i><br>
+      Games Completed
+    </h4>
+    <h1 class="counter" data-target="3">0</h1>
+  </div>
+</div>
+
     
 
       <footer>
@@ -258,10 +273,36 @@
         }, { threshold: 0.2 });
 
         elements.forEach(el => observer.observe(el));
-      </script>'
+
+
+        <script>
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200; // lower = faster
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      const increment = Math.ceil(target / speed);
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+</script>
+
+      </script>
 </body>
 
 </html>
+
 
 
 
